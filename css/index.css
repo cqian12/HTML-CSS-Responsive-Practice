@@ -63,9 +63,11 @@ body {
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Oxygen', sans-serif;
-    color:#fbfffb   ;
+    color:#266035;
+    text-align: center;
 }
 h1 {
+    color: #fbfbfb;
     font-size: 5rem;
 }
 h2 {
@@ -85,6 +87,9 @@ button{
     font-size:1.8rem;
     font-family: 'Source Sans Pro', sans-serif;
     color:#fbfffb;
+}
+section {
+    padding:4% 0;
 }
 
 /*header styling*/
@@ -136,4 +141,136 @@ nav {
 #top button:hover {
     color:#fbfffb;
     background-color:#266035;
+}
+
+/*about section styling*/
+#about {
+    height:80vh;
+    background-image: url('../images/about-img.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#about .story {
+    width:25%;
+    margin-right:10%;
+}
+
+/*plant section styling*/
+#shop h2 {
+    padding-bottom:2%;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.shoptxt, .bgimg {
+    width:50%;
+}
+.shoptxt {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:6% 4%;
+    text-align: center;
+}
+.shoptxt div {
+    width:65%;
+}
+.shoptxt div button {
+    margin-top:5%;
+}
+.bgimg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.succulents {
+    background-image: url('../images/succulants.jpg');
+}
+.cacti {
+    background-image: url('../images/cacti.jpg');
+}
+.tropicals {
+    background-image: url('../images/tropicals.jpg');
+}
+
+/*footer styling*/
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #266035;
+    color:white;
+}
+#contact a, #contact h3 {
+    color:white;
+    text-align: left;
+}
+#contact h2 {
+    width:100%;
+}
+.left .right {
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.left div, .right img {
+    width:60%;
+}
+.bottom {
+    width:100%;
+}
+
+/*responsive styles*/
+@media(max-width:800px) {
+
+}
+@media(max-width:500px) {
+    nav {
+        flex-direction: column;
+    }
+    .links {
+        width:80%;
+    }
+    #about {
+        background-image: none;
+        background-color: #e0e1e3;
+        justify-content: center;
+        height:auto;
+    }
+    #about .story {
+        margin:0;
+        width:80%;
+    }
+    .container {
+        justify-content: center;
+    }
+    .bgimg {
+        height:60vh;
+    }
+    .shoptxt .bgimg {
+        width:90%;
+    }
+    .one {
+        order:0;
+    }
+    .two {
+        order:1;
+    }
+    .three {
+        order:3;
+    }
+    .four {
+        order:2;
+    }
+    .five {
+        order:4;
+    }
+    .six {
+        order:5;
+    }
 }
