@@ -211,8 +211,9 @@ nav {
 }
 #contact h2 {
     width:100%;
+    color:#fbfffb;
 }
-.left .right {
+.left,.right {
     width:50%;
     display:flex;
     justify-content: center;
@@ -227,7 +228,7 @@ nav {
 
 /*responsive styles*/
 @media(max-width:800px) {
-
+/*looks fine*/
 }
 @media(max-width:500px) {
     nav {
@@ -252,7 +253,7 @@ nav {
     .bgimg {
         height:60vh;
     }
-    .shoptxt .bgimg {
+    .shoptxt, .bgimg {
         width:90%;
     }
     .one {
@@ -262,15 +263,36 @@ nav {
         order:1;
     }
     .three {
-        order:3;
+        order:2;
     }
     .four {
-        order:2;
+        order:3;
     }
     .five {
         order:4;
     }
     .six {
         order:5;
+    }
+    #contact {
+        flex-direction: column;
+    }
+    #contact h2 {
+        order:0;
+    }
+    #contact .left {
+        order:2;
+    }
+    #contact .right {
+        order:1;
+    }
+    #contact .bottom {
+        order:3;
+    }
+    .left, .right {
+        width:100%;
+    }
+    .bottom {
+        text-align: center;
     }
 }
